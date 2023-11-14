@@ -2,12 +2,11 @@
 # и подсчитывает количество цифр в этом числе.
 # Нельзя использованть функцию len()
 
-number = input('Введите целое число: ')
-
-# если число отрицательное отбрасываем знак минуса
-positive_number = number.replace('-', '')
+number = abs(int(input('Введите целое число: ')))
 
 count = 0
-for x in positive_number:
+while number > 0:
     count += 1
+    number //= 10
+
 print('Количество цифр в числе: ', count)

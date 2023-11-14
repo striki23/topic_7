@@ -1,5 +1,5 @@
 print('Решение с использованием цикла for:')
-for number in range(1,11):
+for number in range(1, 11):
     print(number)
 
 print('Решение с использованием цикла while:')

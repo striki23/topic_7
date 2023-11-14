@@ -13,8 +13,9 @@ else:
         x += 1
     print(f'Факториал числа {number} равен {composition}')
 
-# Вариант цикла с помощью for:
-#     composition = 1
-#     for x in range (1, number + 1):
-#         composition *= x
-#     print(f'Факториал числа {number} равен {composition}')
+    # Вариант цикла с помощью for:
+
+    composition = 1
+    for x in range(1, number + 1):
+        composition *= x
+    print(f'Факториал числа {number} равен {composition}')
