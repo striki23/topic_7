@@ -1,14 +1,14 @@
 # Программа раскладывает число на простые множители
 number = int(input('Введите число: '))
-lst = []
 
+lst = []
 multiplier = 2
 
-while number/multiplier >= 1:
-    temp = number / multiplier
+while multiplier <= number:
     if number % multiplier == 0:
         lst.append(multiplier)
-        number = temp
+        # print(multiplier, end=' ')
+        number = number // multiplier
     else:
         multiplier += 1
 print(*lst)
