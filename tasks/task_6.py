@@ -5,6 +5,9 @@
 number = abs(int(input('Введите целое число: ')))
 
 count = 0
+if number == 0:
+    count = 1
+
 while number > 0:
     count += 1
     number //= 10
